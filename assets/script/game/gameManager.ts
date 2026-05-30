@@ -40,6 +40,15 @@ export class GameManager extends Component {
     private _isLoadRoadNum: number = 0; //当前加载路面数量
     private _isLoadBrickNum: number = 0; //当前砖块数量
     private _isInitAiNum: boolean = false; //是否初始化ai数量
+    private _onGameHide = () => {
+        if (!playerData.instance.settings) {
+            playerData.instance.settings = {}
+        }
+
+        playerData.instance.settings.hideTime = Date.now();
+        playerData.instance.saveAll();
+        StorageManager.instance.save();
+    };
 
     onLoad() {
         //@ts-ignore
@@ -70,15 +79,7 @@ export class GameManager extends Component {
         }
 
         //记录离线时间
-        game.on(Game.EVENT_HIDE, () => {
-            if (!playerData.instance.settings) {
-                playerData.instance.settings = {}
-            }
-
-            playerData.instance.settings.hideTime = Date.now();
-            playerData.instance.saveAll();
-            StorageManager.instance.save();
-        })
+        game.on(Game.EVENT_HIDE, this._onGameHide, this)
 
         this.getAllHandBrickPre();
 
@@ -88,6 +89,12 @@ export class GameManager extends Component {
         this._ndEffectParent = find('effectManager')!;
         GameManager.ndRewardCircle = this.node.getChildByName('rewardCircle')!;
         GameManager.ndBrickFloor = this.node.getChildByName('brickFloor')!;
+    }
+
+    onDestroy() {
+        game.off(Game.EVENT_HIDE, this._onGameHide, this);
+        clientEvent.targetOff(this);
+        this._clearWaitShowPanelTimer();
     }
 
     /**
@@ -144,6 +151,8 @@ export class GameManager extends Component {
      * 初始化游戏
      */
     private _initGame() {
+        this._clearWaitShowPanelTimer();
+
         GameManager.arriveRoadEndNum = 0;
         GameManager.isGameStart = false;
         GameManager.isWin = false;
@@ -379,6 +388,7 @@ export class GameManager extends Component {
         if (this._isLoadRoadNum === this._mapDataCount) {
             this.initEndRewardCircle();
 
+            this._clearWaitShowPanelTimer();
             this._cbIdToWaitShowPanel = setInterval(() => {
                 if (this._isLoadBrickNum !== gameConstants.BRICKSKIN_COUNT) return;
 
@@ -388,13 +398,19 @@ export class GameManager extends Component {
                     game.setFrameRate(40);
                 }
 
-                if (this._cbIdToWaitShowPanel) {
-                    clearInterval(this._cbIdToWaitShowPanel);
-                    this._cbIdToWaitShowPanel = null!;
-                }
+                this._clearWaitShowPanelTimer();
                 uiManager.instance.showDialog(gameConstants.PANEL_PATH.MAIN_PANEL);
             }, 50);
         }
+    }
+
+    private _clearWaitShowPanelTimer() {
+        if (!this._cbIdToWaitShowPanel) {
+            return;
+        }
+
+        clearInterval(this._cbIdToWaitShowPanel);
+        this._cbIdToWaitShowPanel = null!;
     }
 
     /**
