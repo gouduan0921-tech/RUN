@@ -1,0 +1,86 @@
+{
+  "__version__": "1.0.5",
+  "general": {
+    "designResolution": {
+      "width": 720,
+      "height": 1280
+    }
+  },
+  "physics": {
+    "collisionGroups": [
+      {
+        "index": 1,
+        "name": "player"
+      },
+      {
+        "index": 2,
+        "name": "floor"
+      },
+      {
+        "index": 3,
+        "name": "ai"
+      }
+    ],
+    "collisionMatrix": {
+      "0": 0,
+      "1": 4,
+      "2": 10,
+      "3": 4
+    }
+  },
+  "custom_joint_texture_layouts": [
+    {
+      "textureLength": 12,
+      "contents": [
+        {
+          "skeleton": "abc641f4-cd1c-4128-9f6d-95fb0bf834c7@438fe",
+          "clips": [
+            "abc641f4-cd1c-4128-9f6d-95fb0bf834c7@f928f",
+            "abc641f4-cd1c-4128-9f6d-95fb0bf834c7@ea5fe",
+            "abc641f4-cd1c-4128-9f6d-95fb0bf834c7@7c89c",
+            "abc641f4-cd1c-4128-9f6d-95fb0bf834c7@6f220",
+            "abc641f4-cd1c-4128-9f6d-95fb0bf834c7@ac3f0",
+            "abc641f4-cd1c-4128-9f6d-95fb0bf834c7@2c581",
+            "abc641f4-cd1c-4128-9f6d-95fb0bf834c7@f87ee",
+            "abc641f4-cd1c-4128-9f6d-95fb0bf834c7@6af9c",
+            "abc641f4-cd1c-4128-9f6d-95fb0bf834c7@d36f8",
+            "abc641f4-cd1c-4128-9f6d-95fb0bf834c7@d7727",
+            "abc641f4-cd1c-4128-9f6d-95fb0bf834c7@24c9f",
+            "abc641f4-cd1c-4128-9f6d-95fb0bf834c7@6e7c3",
+            "abc641f4-cd1c-4128-9f6d-95fb0bf834c7@cf5ee",
+            "abc641f4-cd1c-4128-9f6d-95fb0bf834c7@ee525"
+          ]
+        }
+      ]
+    },
+    {
+      "textureLength": 348,
+      "contents": [
+        {
+          "skeleton": "6225c0d5-ab32-459a-82ff-4ef5596b55dd@438fe",
+          "clips": [
+            "6225c0d5-ab32-459a-82ff-4ef5596b55dd@f928f",
+            "6225c0d5-ab32-459a-82ff-4ef5596b55dd@ea5fe",
+            "6225c0d5-ab32-459a-82ff-4ef5596b55dd@7c89c",
+            "6225c0d5-ab32-459a-82ff-4ef5596b55dd@6f220",
+            "6225c0d5-ab32-459a-82ff-4ef5596b55dd@ac3f0",
+            "6225c0d5-ab32-459a-82ff-4ef5596b55dd@2c581",
+            "6225c0d5-ab32-459a-82ff-4ef5596b55dd@f87ee",
+            "6225c0d5-ab32-459a-82ff-4ef5596b55dd@6af9c",
+            "6225c0d5-ab32-459a-82ff-4ef5596b55dd@d36f8",
+            "6225c0d5-ab32-459a-82ff-4ef5596b55dd@d7727",
+            "6225c0d5-ab32-459a-82ff-4ef5596b55dd@24c9f",
+            "6225c0d5-ab32-459a-82ff-4ef5596b55dd@6e7c3",
+            "6225c0d5-ab32-459a-82ff-4ef5596b55dd@cf5ee",
+            "6225c0d5-ab32-459a-82ff-4ef5596b55dd@ee525"
+          ]
+        }
+      ]
+    }
+  ],
+  "fbx": {
+    "legacyFbxImporter": {
+      "visible": true
+    }
+  }
+}

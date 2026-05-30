@@ -1,0 +1,63 @@
+{
+  "ver": "2.0.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "d092e9c2-9cf6-47cd-9d76-440d734597d1",
+  "files": [],
+  "subMetas": {
+    "274e2": {
+      "importer": "gltf-mesh",
+      "uuid": "d092e9c2-9cf6-47cd-9d76-440d734597d1@274e2",
+      "displayName": "",
+      "id": "274e2",
+      "name": "girl02.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ee633": {
+      "importer": "gltf-scene",
+      "uuid": "d092e9c2-9cf6-47cd-9d76-440d734597d1@ee633",
+      "displayName": "",
+      "id": "ee633",
+      "name": "girl02.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": true,
+    "redirect": "d092e9c2-9cf6-47cd-9d76-440d734597d1@ee633",
+    "assetFinder": {
+      "meshes": [
+        "d092e9c2-9cf6-47cd-9d76-440d734597d1@274e2"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "49cf0894-0577-4df7-b99a-f502e9c9c3fb"
+      ],
+      "scenes": [
+        "d092e9c2-9cf6-47cd-9d76-440d734597d1@ee633"
+      ]
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/map/model/girl/girl02",
+    "disableMeshSplit": true
+  }
+}

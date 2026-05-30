@@ -1,0 +1,63 @@
+{
+  "ver": "2.0.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "a0587cf6-480b-4ef3-a363-5fae1dd0e9b5",
+  "files": [],
+  "subMetas": {
+    "1553d": {
+      "importer": "gltf-mesh",
+      "uuid": "a0587cf6-480b-4ef3-a363-5fae1dd0e9b5@1553d",
+      "displayName": "",
+      "id": "1553d",
+      "name": "lollipop02.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "17ff6": {
+      "importer": "gltf-scene",
+      "uuid": "a0587cf6-480b-4ef3-a363-5fae1dd0e9b5@17ff6",
+      "displayName": "",
+      "id": "17ff6",
+      "name": "lollipop02.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": true,
+    "redirect": "a0587cf6-480b-4ef3-a363-5fae1dd0e9b5@17ff6",
+    "assetFinder": {
+      "meshes": [
+        "a0587cf6-480b-4ef3-a363-5fae1dd0e9b5@1553d"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "374c72e2-412f-4ff9-b001-a45fda738b33"
+      ],
+      "scenes": [
+        "a0587cf6-480b-4ef3-a363-5fae1dd0e9b5@17ff6"
+      ]
+    },
+    "disableMeshSplit": true,
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/map/model/road"
+  }
+}

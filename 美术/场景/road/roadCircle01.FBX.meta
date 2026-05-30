@@ -1,0 +1,63 @@
+{
+  "ver": "2.0.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "439ccfdc-518d-4a02-ad6c-dadbd3847860",
+  "files": [],
+  "subMetas": {
+    "59cc5": {
+      "importer": "gltf-mesh",
+      "uuid": "439ccfdc-518d-4a02-ad6c-dadbd3847860@59cc5",
+      "displayName": "",
+      "id": "59cc5",
+      "name": "roadCircle01.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ffa84": {
+      "importer": "gltf-scene",
+      "uuid": "439ccfdc-518d-4a02-ad6c-dadbd3847860@ffa84",
+      "displayName": "",
+      "id": "ffa84",
+      "name": "roadCircle01.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": true,
+    "redirect": "439ccfdc-518d-4a02-ad6c-dadbd3847860@ffa84",
+    "assetFinder": {
+      "meshes": [
+        "439ccfdc-518d-4a02-ad6c-dadbd3847860@59cc5"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "374c72e2-412f-4ff9-b001-a45fda738b33"
+      ],
+      "scenes": [
+        "439ccfdc-518d-4a02-ad6c-dadbd3847860@ffa84"
+      ]
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/map/model/road",
+    "disableMeshSplit": true
+  }
+}

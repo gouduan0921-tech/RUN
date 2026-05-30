@@ -1,0 +1,86 @@
+{
+  "ver": "2.3.8",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "96cf5119-6cc1-438c-b14c-9d0754aba842",
+  "files": [],
+  "subMetas": {
+    "f19a7": {
+      "importer": "gltf-mesh",
+      "uuid": "96cf5119-6cc1-438c-b14c-9d0754aba842@f19a7",
+      "displayName": "",
+      "id": "f19a7",
+      "name": "rollCake.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 124
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "04e4f": {
+      "importer": "gltf-scene",
+      "uuid": "96cf5119-6cc1-438c-b14c-9d0754aba842@04e4f",
+      "displayName": "",
+      "id": "04e4f",
+      "name": "rollCake.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": true,
+    "redirect": "96cf5119-6cc1-438c-b14c-9d0754aba842@04e4f",
+    "assetFinder": {
+      "meshes": [
+        "96cf5119-6cc1-438c-b14c-9d0754aba842@f19a7"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "ca7b85b6-a056-49c3-bc25-a35b1024d34d"
+      ],
+      "scenes": [
+        "96cf5119-6cc1-438c-b14c-9d0754aba842@04e4f"
+      ]
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/res/model/rollCake",
+    "disableMeshSplit": true,
+    "fbx": {
+      "smartMaterialEnabled": false,
+      "matchMeshNames": false
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    }
+  }
+}

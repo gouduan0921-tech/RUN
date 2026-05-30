@@ -1,0 +1,86 @@
+{
+  "ver": "2.3.8",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "6b39a600-eb4b-4df7-ae4f-2cb31f6a6f5f",
+  "files": [],
+  "subMetas": {
+    "92006": {
+      "importer": "gltf-scene",
+      "uuid": "6b39a600-eb4b-4df7-ae4f-2cb31f6a6f5f@92006",
+      "displayName": "",
+      "id": "92006",
+      "name": "door.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0af3d": {
+      "importer": "gltf-mesh",
+      "uuid": "6b39a600-eb4b-4df7-ae4f-2cb31f6a6f5f@0af3d",
+      "displayName": "",
+      "id": "0af3d",
+      "name": "door.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 4184
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": true,
+    "redirect": "6b39a600-eb4b-4df7-ae4f-2cb31f6a6f5f@92006",
+    "assetFinder": {
+      "meshes": [
+        "6b39a600-eb4b-4df7-ae4f-2cb31f6a6f5f@0af3d"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "b3d2350d-f1b3-4e18-be20-e0a63bc5c37f"
+      ],
+      "scenes": [
+        "6b39a600-eb4b-4df7-ae4f-2cb31f6a6f5f@92006"
+      ]
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/res/model/map/road/end",
+    "disableMeshSplit": true,
+    "fbx": {
+      "smartMaterialEnabled": false,
+      "matchMeshNames": false
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    }
+  }
+}

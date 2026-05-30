@@ -1,0 +1,63 @@
+{
+  "ver": "2.0.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "a5a18a83-ee2f-45b4-9872-471e87ccd4bb",
+  "files": [],
+  "subMetas": {
+    "a3320": {
+      "importer": "gltf-mesh",
+      "uuid": "a5a18a83-ee2f-45b4-9872-471e87ccd4bb@a3320",
+      "displayName": "",
+      "id": "a3320",
+      "name": "candy.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2742a": {
+      "importer": "gltf-scene",
+      "uuid": "a5a18a83-ee2f-45b4-9872-471e87ccd4bb@2742a",
+      "displayName": "",
+      "id": "2742a",
+      "name": "candy.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": true,
+    "redirect": "a5a18a83-ee2f-45b4-9872-471e87ccd4bb@2742a",
+    "assetFinder": {
+      "meshes": [
+        "a5a18a83-ee2f-45b4-9872-471e87ccd4bb@a3320"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "374c72e2-412f-4ff9-b001-a45fda738b33"
+      ],
+      "scenes": [
+        "a5a18a83-ee2f-45b4-9872-471e87ccd4bb@2742a"
+      ]
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/map/model/road",
+    "disableMeshSplit": true
+  }
+}

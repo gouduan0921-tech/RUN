@@ -1,0 +1,63 @@
+{
+  "ver": "2.0.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "c3653da9-8326-4e19-8f08-896cbaa7902d",
+  "files": [],
+  "subMetas": {
+    "8ff45": {
+      "importer": "gltf-mesh",
+      "uuid": "c3653da9-8326-4e19-8f08-896cbaa7902d@8ff45",
+      "displayName": "",
+      "id": "8ff45",
+      "name": "doughnut.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8d9b5": {
+      "importer": "gltf-scene",
+      "uuid": "c3653da9-8326-4e19-8f08-896cbaa7902d@8d9b5",
+      "displayName": "",
+      "id": "8d9b5",
+      "name": "doughnut.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": true,
+    "redirect": "c3653da9-8326-4e19-8f08-896cbaa7902d@8d9b5",
+    "assetFinder": {
+      "meshes": [
+        "c3653da9-8326-4e19-8f08-896cbaa7902d@8ff45"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "374c72e2-412f-4ff9-b001-a45fda738b33"
+      ],
+      "scenes": [
+        "c3653da9-8326-4e19-8f08-896cbaa7902d@8d9b5"
+      ]
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/map/model/road",
+    "disableMeshSplit": true
+  }
+}

@@ -1,0 +1,17 @@
+编号,类型,资源名称,说明,砖块堆数据
+number,string,string,string,string
+ID,type,name,desc,brickLayerData
+1001,road,roadStraightShort,短直路,
+1002,road,roadStraightMedium,中直路,
+1003,road,roadStraightLong,长直路,
+1004,road,roadCircle,圆台,
+1005,road,roadLeftSmall,90度左转弯,
+1006,road,roadLeftMax,90度缓慢左转弯,
+1007,road,roadRightSmall,90度右转弯,
+1008,road,roadRightMax,90度缓慢右转弯,
+1010,road,roadEnd,结尾路面（包含拱门）,
+1011,road,roadEndReward,结尾奖励圆台,
+2001,brickLayer,layer1,堆叠砖块2层，第一层8个，第二层7个,8/7
+2002,brickLayer,layer2,堆叠砖块3层：第一层3个，第二层2个，第三层1个,3/2/1
+2003,brickLayer,layer3,堆叠砖块4层：第一层3个，第二层2个，第三层3个，第四层2个,3/2/3/2
+3001,brick,brick1,砖块甜甜圈,

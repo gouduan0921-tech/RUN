@@ -1,0 +1,86 @@
+{
+  "ver": "2.3.8",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "b0f7edaf-468e-459d-94ec-4c2acc34c5ba",
+  "files": [],
+  "subMetas": {
+    "59cc5": {
+      "importer": "gltf-mesh",
+      "uuid": "b0f7edaf-468e-459d-94ec-4c2acc34c5ba@59cc5",
+      "displayName": "",
+      "id": "59cc5",
+      "name": "roadCircle01.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 216
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ffa84": {
+      "importer": "gltf-scene",
+      "uuid": "b0f7edaf-468e-459d-94ec-4c2acc34c5ba@ffa84",
+      "displayName": "",
+      "id": "ffa84",
+      "name": "roadCircle01.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": true,
+    "dumpMaterials": true,
+    "disableMeshSplit": true,
+    "materialDumpDir": "db://assets/res/model/map/road",
+    "redirect": "b0f7edaf-468e-459d-94ec-4c2acc34c5ba@ffa84",
+    "assetFinder": {
+      "meshes": [
+        "b0f7edaf-468e-459d-94ec-4c2acc34c5ba@59cc5"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "0c02e2bf-6298-454b-abd3-e9d7a3ef3007"
+      ],
+      "scenes": [
+        "b0f7edaf-468e-459d-94ec-4c2acc34c5ba@ffa84"
+      ]
+    },
+    "fbx": {
+      "smartMaterialEnabled": false,
+      "matchMeshNames": false
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    }
+  }
+}

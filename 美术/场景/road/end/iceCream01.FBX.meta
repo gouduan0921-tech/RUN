@@ -1,0 +1,63 @@
+{
+  "ver": "2.0.10",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "f3e0dd43-263a-43dc-8cb5-5ecfc10b4ae0",
+  "files": [],
+  "subMetas": {
+    "5a492": {
+      "importer": "gltf-mesh",
+      "uuid": "f3e0dd43-263a-43dc-8cb5-5ecfc10b4ae0@5a492",
+      "displayName": "",
+      "id": "5a492",
+      "name": "iceCream01.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8a347": {
+      "importer": "gltf-scene",
+      "uuid": "f3e0dd43-263a-43dc-8cb5-5ecfc10b4ae0@8a347",
+      "displayName": "",
+      "id": "8a347",
+      "name": "iceCream01.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": true,
+    "redirect": "f3e0dd43-263a-43dc-8cb5-5ecfc10b4ae0@8a347",
+    "assetFinder": {
+      "meshes": [
+        "f3e0dd43-263a-43dc-8cb5-5ecfc10b4ae0@5a492"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "374c72e2-412f-4ff9-b001-a45fda738b33"
+      ],
+      "scenes": [
+        "f3e0dd43-263a-43dc-8cb5-5ecfc10b4ae0@8a347"
+      ]
+    },
+    "disableMeshSplit": true,
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/map/model/road"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "ver": "2.3.8",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "64ff679d-5561-4550-8b2c-c76f01f8cbeb",
+  "files": [],
+  "subMetas": {
+    "64911": {
+      "importer": "gltf-scene",
+      "uuid": "64ff679d-5561-4550-8b2c-c76f01f8cbeb@64911",
+      "displayName": "",
+      "id": "64911",
+      "name": "roadRight02.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ff5de": {
+      "importer": "gltf-mesh",
+      "uuid": "64ff679d-5561-4550-8b2c-c76f01f8cbeb@ff5de",
+      "displayName": "",
+      "id": "ff5de",
+      "name": "roadRight02.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 448
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": true,
+    "dumpMaterials": true,
+    "disableMeshSplit": true,
+    "materialDumpDir": "db://assets/res/model/map/road",
+    "redirect": "64ff679d-5561-4550-8b2c-c76f01f8cbeb@64911",
+    "assetFinder": {
+      "meshes": [
+        "64ff679d-5561-4550-8b2c-c76f01f8cbeb@ff5de"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "0c02e2bf-6298-454b-abd3-e9d7a3ef3007"
+      ],
+      "scenes": [
+        "64ff679d-5561-4550-8b2c-c76f01f8cbeb@64911"
+      ]
+    },
+    "fbx": {
+      "smartMaterialEnabled": false,
+      "matchMeshNames": false
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    }
+  }
+}

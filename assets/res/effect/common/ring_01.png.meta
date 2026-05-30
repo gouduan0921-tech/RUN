@@ -1,0 +1,46 @@
+{
+  "ver": "1.0.26",
+  "importer": "image",
+  "imported": true,
+  "uuid": "2da8d0d8-7f85-4619-abe7-2d4ce5bbcb80",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "2da8d0d8-7f85-4619-abe7-2d4ce5bbcb80@6c48a",
+      "displayName": "ring_01",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "2da8d0d8-7f85-4619-abe7-2d4ce5bbcb80",
+        "visible": false
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "hasAlpha": true,
+    "type": "texture",
+    "redirect": "2da8d0d8-7f85-4619-abe7-2d4ce5bbcb80@6c48a",
+    "compressSettings": {
+      "useCompressTexture": false
+    },
+    "flipVertical": false,
+    "fixAlphaTransparencyArtifacts": false
+  }
+}
