@@ -1,4 +1,4 @@
-import { _decorator, Prefab, Node, SpriteComponent, SpriteFrame, ImageAsset, resources, error, Texture2D, instantiate, isValid, find, TextAsset, JsonAsset, Material } from "cc";
+import { _decorator, Prefab, Node, SpriteComponent, SpriteFrame, resources, error, instantiate, isValid, find, TextAsset, JsonAsset, Material } from "cc";
 const { ccclass } = _decorator;
 
 @ccclass("resourceUtil")
@@ -11,7 +11,7 @@ export class resourceUtil {
  * @method loadRes
  */
     public static loadRes(url: string, type: any, cb: Function = () => { }) {
-        resources.load(url, (err: any, res: any) => {
+        const onComplete = (err: any, res: any) => {
             if (err) {
                 error(err.message || err);
                 cb(err, res);
@@ -19,7 +19,13 @@ export class resourceUtil {
             }
 
             cb && cb(null, res);
-        })
+        };
+
+        if (type) {
+            resources.load(url, type, onComplete);
+        } else {
+            resources.load(url, onComplete);
+        }
     }
 
     /**
@@ -103,20 +109,14 @@ export class resourceUtil {
      */
     public static loadSpriteFrameRes(path: string) {
         return new Promise((resolve, reject) => {
-            this.loadRes(path, SpriteFrame, (err: any, img: ImageAsset) => {
+            this.loadRes(path, SpriteFrame, (err: any, spriteFrame: SpriteFrame) => {
                 if (err) {
                     console.error('spriteFrame load failed!', path, err);
                     reject && reject();
                     return;
                 }
 
-                let texture = new Texture2D();
-                texture.image = img;
-
-                let sf = new SpriteFrame();
-                sf.texture = texture;
-
-                resolve && resolve(sf);
+                resolve && resolve(spriteFrame);
             })
         })
     }

@@ -48,6 +48,15 @@ export class Player extends RoleBase {
         })
     }
 
+    onDestroy() {
+        clientEvent.targetOff(this);
+
+        if (this.cbIdToMainBrickAdd) {
+            clearInterval(this.cbIdToMainBrickAdd);
+            this.cbIdToMainBrickAdd = null;
+        }
+    }
+
     private _initEvent() {
         clientEvent.on(gameConstants.CLIENTEVENT_LIST.ADDROLEBRICK, this._addRoleBrick, this);
         clientEvent.on(gameConstants.CLIENTEVENT_LIST.TOUCHMOVEPLAYER, this._touchMovePlayer, this);

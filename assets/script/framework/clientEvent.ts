@@ -54,6 +54,25 @@ export class clientEvent {
     };
 
     /**
+     * 移除某个对象上的所有监听，避免节点销毁后事件仍然回调到旧实例。
+     * @param {object} target 监听目标
+     */
+    public static targetOff (target: any) {
+        if (!target) {
+            return;
+        }
+
+        for (var eventName in clientEvent._handlers) {
+            var handlerList = clientEvent._handlers[eventName];
+            for (var i = handlerList.length - 1; i > -1; i--) {
+                if (handlerList[i].target === target) {
+                    handlerList.splice(i, 1);
+                }
+            }
+        }
+    };
+
+    /**
      * 分发事件
      * @param {string} eventName 分发事件名
      * @param  {...any} params 分发事件参数
@@ -71,6 +90,7 @@ export class clientEvent {
             return;
         }
 
+        handlerList = handlerList.slice();
         for (i = 0; i < handlerList.length; i++) {
             var objHandler = handlerList[i];
             if (objHandler.handler) {

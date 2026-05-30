@@ -19,6 +19,10 @@ export class CameraFollow extends Component {
         clientEvent.on(gameConstants.CLIENTEVENT_LIST.CHANGECAMERATYPE, this._changeCameraType, this);
     }
 
+    onDestroy() {
+        clientEvent.targetOff(this);
+    }
+
     /**
      * 改变摄像机的相关数据
      * @param type gameConstants.CAMERA_TYPE_LIST

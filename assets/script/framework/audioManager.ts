@@ -91,6 +91,11 @@ export class AudioManager {
 
 
         resourceUtil.loadRes(path, AudioClip, (err: any, clip: any) => {
+            if (err || !clip) {
+                console.error('music load failed', name, err);
+                return;
+            }
+
             let source = this._getAudioSource(clip);
             let tmp: AudioData = {
                 source,
@@ -120,6 +125,11 @@ export class AudioManager {
         // }
 
         resourceUtil.loadRes(path + name, AudioClip, (err: any, clip: any) => {
+            if (err || !clip) {
+                console.error('sound load failed', name, err);
+                return;
+            }
+
             let source = this._getAudioSource(clip);
             let tmp: AudioData = {
                 source,
